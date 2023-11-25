@@ -16,8 +16,25 @@ def obter_opcao():
 
 # Função para exibir informações sobre vacinas
 def informacoes_vacinas():
-    # Informações sobre vacinas
-    print("Informações sobre vacinas: ...")
+    opcao_info_vacina = 0
+    while opcao_info_vacina != 4:
+        print("Informações sobre vacinas")
+        print("Escolha uma opção:")
+        print("1. Ver informações sobre vacina A:")
+        print("2. Ver informações sobre vacina B:")
+        print("3. Ver informações sobre vacina C:")
+        print("4. Sair")
+
+        opcao_info_vacina = int(input("Digite o número da opção desejada: "))
+        if opcao_info_vacina < 0 or opcao_info_vacina > 4:
+            print("Por favor, digite uma opção válida (1 a 4)")
+        else:
+            if opcao_info_vacina == 1:
+                print("Informações sobre a vacina A: ...")
+            elif opcao_info_vacina == 2:
+                print("Informações sobre a vacina B: ...")
+            elif opcao_info_vacina == 3:
+                print("Informações sobre a vacina C: ...")
 
 # Função para exibir estatísticas de vacinação
 def estatisticas_vacinacao():

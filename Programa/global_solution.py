@@ -38,13 +38,47 @@ def informacoes_vacinas():
 
 # Função para exibir estatísticas de vacinação
 def estatisticas_vacinacao():
-    # Aqui você pode incluir estatísticas de vacinação
-    print("Estatísticas de vacinação: ...")
+    opcao_estat_vacina = 0
+    while opcao_estat_vacina != 4:
+        print("Informações sobre vacinas")
+        print("Escolha uma opção:")
+        print("1. Ver estatísticas sobre vacina A:")
+        print("2. Ver estatísticas sobre vacina B:")
+        print("3. Ver estatísticas sobre vacina C:")
+        print("4. Sair")
+
+        opcao_estat_vacina = int(input("Digite o número da opção desejada: "))
+        if opcao_estat_vacina < 0 or opcao_estat_vacina > 4:
+            print("Por favor, digite uma opção válida (1 a 4)")
+        else:
+            if opcao_estat_vacina == 1:
+                print("Estatísticas sobre a vacina A: ...")
+            elif opcao_estat_vacina == 2:
+                print("Estatísticas sobre a vacina B: ...")
+            elif opcao_estat_vacina == 3:
+                print("Estatísticas sobre a vacina C: ...")
 
 # Função para exibir locais de vacinação próximos
 def locais_vacinacao():
-    # Aqui você pode adicionar a lógica para buscar locais de vacinação próximos
-    print("Locais de vacinação próximos: ...")
+    opcao_locais_vacina = 0
+    while opcao_locais_vacina != 4:
+        print("Informações sobre vacinas")
+        print("Escolha uma opção:")
+        print("1. Ver pontos de vacincação A:")
+        print("2. Ver pontos de vacincação B:")
+        print("3. Ver pontos de vacincação C:")
+        print("4. Sair")
+
+        opcao_locais_vacina = int(input("Digite o número da opção desejada: "))
+        if opcao_locais_vacina < 0 or opcao_locais_vacina > 4:
+            print("Por favor, digite uma opção válida (1 a 4)")
+        else:
+            if opcao_locais_vacina == 1:
+                print("Pontos de vacincação A: ...")
+            elif opcao_locais_vacina == 2:
+                print("Pontos de vacincação B: ...")
+            elif opcao_locais_vacina == 3:
+                print("Pontos de vacincação C: ...")
 
 # Execução do programa
 opcao = 0

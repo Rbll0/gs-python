@@ -64,81 +64,60 @@ def informacoes_vacinas():
 
 # Função para exibir locais das UBS de vacinação no centro de São Paulo
 def locais_vacinacao():
+    enderecos = [
+        "R. HUMAITÁ, 520 - BELA VISTA - CEP: 01321-010",
+        "R. ALMIRANTE MARQUES LEÃO, 684 - BELA VISTA - CEP: 01330-010",
+        "R. TENENTE PENA, 8 - BOM RETIRO - CEP: 01127-020",
+        "AV. LACERDA FRANCO, 791 - CAMBUCI - CEP: 01536-000",
+        "R. BORACEA, 270 - SANTA CECÍLIA - CEP: 01135-010",
+        "R. VITORINO CARMILO, 599 - CAMPOS ELÍSEOS - CEP: 01153-000",
+        "PRAÇA PATRIARCA, 100 - CENTRO - CEP: 01002-010",
+        "R. FREDERICO ALVARENGA, 259 - PQ DOM PEDRO - CEP: 01020-030"
+    ]
+
     opcao_locais_vacina = 0
     while opcao_locais_vacina != 9:
         print("ENDEREÇOS DE UBS NO CENTRO DE SÃO PAULO (REDE PÚBLICA)")
-        print("Escolha uma opção para ver o endereço: ")
-        print("1. UBS HUMAITÁ - DR. JOÃO DE AZEVEDO LAGE:")
-        print("2. UBS NOSSA SENHORA DO BRASIL - ARMANDO D'ARIENZO")
-        print("3. UBS BOM RETIRO - DR. OCTAVIO AUGUSTO RODOVALHO")
-        print("4. UBS CAMBUCI")
-        print("5. UBS BORACEA")
-        print("6. UBS SANTA CECÍLIA - HUMBERTO PASCALE")
-        print("7. UBS REPÚBLICA - FERNANDA SANTE LIMEIRA")
-        print("8. UBS SÉ")
-        print("9. Sair")
+        print("Digite o número da opção desejada (ou 9 para sair): ")
 
-        opcao_locais_vacina = int(input("Digite o número da opção desejada: "))
+        for i, endereco in enumerate(enderecos, start=1):
+            print(f"{i}. Ver endereço {i}")
+
+        opcao_locais_vacina = int(input())
+
         if opcao_locais_vacina < 1 or opcao_locais_vacina > 9:
             print("Por favor, digite uma opção válida (1 a 9)")
-        else:
-            if opcao_locais_vacina == 1:
-                print("R. HUMAITÁ, 520 - BELA VISTA - CEP: 01321-010")
-            elif opcao_locais_vacina == 2:
-                print("R. ALMIRANTE MARQUES LEÃO, 684 - BELA VISTA - CEP: 01330-010")
-            elif opcao_locais_vacina == 3:
-                print("R. TENENTE PENA, 8 - BOM RETIRO - CEP: 01127-020")
-            elif opcao_locais_vacina == 4:
-                print("AV. LACERDA FRANCO, 791 - CAMBUCI - CEP: 01536-000")
-            elif opcao_locais_vacina == 5:
-                print("R. BORACEA, 270 - SANTA CECÍLIA - CEP: 01135-010")
-            elif opcao_locais_vacina == 6:
-                print("R. VITORINO CARMILO, 599 - CAMPOS ELÍSEOS - CEP: 01153-000")
-            elif opcao_locais_vacina == 7:
-                print("PRAÇA PATRIARCA, 100 - CENTRO - CEP: 01002-010")
-            elif opcao_locais_vacina == 8:
-                print("R. FREDERICO ALVARENGA, 259 - PQ DOM PEDRO - CEP: 01020-030")
-            elif opcao_locais_vacina == 9:
-                print("Obrigado por usar a plataforma de sensibilização para vacinação.")
+        elif opcao_locais_vacina != 9:
+            print(f"Endereço: {enderecos[opcao_locais_vacina - 1]}")
 
 
 # Função para exibir telefones das UBS de vacinação no centro de São Paulo
 def telefones_vacinacao():
+    telefones = [
+        "Tel: 3241-1632/ 3241-1163",
+        "Tel: 3284-4601/ 3541-3704",
+        "Tel: 3222-0619/ 3224-9903",
+        "Tel: 3276-6480/ 3209-3304",
+        "Tel: 3392-1281/ 3392-1882",
+        "Tel: 3826-0096/ 3826-7970",
+        "Tel: 3242-3756/ 3241-5515",
+        "Tel: 3101-2344/ 3101-3013"
+    ]
+
     opcao_telefones_vacinacao = 0
     while opcao_telefones_vacinacao != 9:
-        print("ENDEREÇOS DAS UBS")
-        print("1. UBS HUMAITÁ - DR. JOÃO DE AZEVEDO LAGE:")
-        print("2. UBS NOSSA SENHORA DO BRASIL - ARMANDO D'ARIENZO")
-        print("3. UBS BOM RETIRO - DR. OCTAVIO AUGUSTO RODOVALHO")
-        print("4. UBS CAMBUCI")
-        print("5. UBS BORACEA")
-        print("6. UBS SANTA CECÍLIA - HUMBERTO PASCALE")
-        print("7. UBS REPÚBLICA - FERNANDA SANTE LIMEIRA")
-        print("8. UBS SÉ")
-        print("9. Sair do programa")
+        print("TELEFONES DAS UBS")
+        print("Digite o número da opção desejada (ou 9 para sair): ")
 
-        opcao_telefones_vacinacao = int(input("Digite o número da opção desejada: "))
+        for i, telefone in enumerate(telefones, start=1):
+            print(f"{i}. Ver telefone {i}")
+
+        opcao_telefones_vacinacao = int(input())
+
         if opcao_telefones_vacinacao < 1 or opcao_telefones_vacinacao > 9:
             print("Por favor, digite uma opção válida (1 a 9)")
-        else:
-            if opcao_telefones_vacinacao == 1:
-                print("Tel: 3241-1632/ 3241-1163")
-            elif opcao_telefones_vacinacao == 2:
-                print("Tel: 3284-4601/ 3541-3704")
-            elif opcao_telefones_vacinacao == 3:
-                print("Tel: 3222-0619/ 3224-9903")
-            elif opcao_telefones_vacinacao == 4:
-                print("Tel: 3276-6480/ 3209-3304")
-            elif opcao_telefones_vacinacao == 5:
-                print("Tel: 3392-1281/ 3392-1882")
-            elif opcao_telefones_vacinacao == 6:
-                print("Tel: 3826-0096/ 3826-7970")
-            elif opcao_telefones_vacinacao == 7:
-                print("Tel: 3242-3756/ 3241-5515")
-            elif opcao_telefones_vacinacao == 8:
-                print("Tel: 3101-2344/ 3101-3013")
-            elif opcao_telefones_vacinacao == 9:
-                print("Obrigado por usar a plataforma de sensibilização para vacinação.")
+        elif opcao_telefones_vacinacao != 9:
+            print(f"Telefone: {telefones[opcao_telefones_vacinacao - 1]}")
 
 
 # Execução do programa

@@ -3,7 +3,7 @@ Gustavo Rabelo Frere; RM: 553326 
 
 Vitor Sobral Dias de Mendonça; Rm: 552729
 
-Marcelo Vieira Junior; RM: 552520
+Marcelo Vieira Junior; RM: 553640
 
 
 DESCRIÇÃO DO PROJETO:

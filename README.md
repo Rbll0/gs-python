@@ -12,3 +12,6 @@ A plataforma de sensibilização para vacinação é um recurso educativo centra
 esclarece dúvidas comuns e desmistifica mitos relacionados à vacinação infantil. Ao detalhar informações específicas sobre cada vacina recomendada, a plataforma visa fornecer uma compreensão clara e acessível dos benefícios, 
 efeitos colaterais potenciais e relevância da vacinação para a saúde das crianças.Seu objetivo principal é capacitar os pais com conhecimento embasado,encorajando a adesão ao calendário vacinal e reforçando a confiança na
 imunização como uma salvaguarda fundamental contra doenças preveníveis.
+
+
+Link para o Vídeo explicativo do menu: https://youtu.be/MuP2bRMDPAU
